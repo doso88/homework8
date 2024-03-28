@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+li{
+    display: inline-block;
+    padding: 30px;
+    color: white;
+}
+nav{
+    display: inline-block;
+    margin-left: 400px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+a:hover{
+    color: red;
+}
+table{
+    border-collapse: collapse;
+    border: 5px solid black;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+th{
+    border: 5px solid black;
+    background-color: grey;
+    padding: 20px;
+    font-family: "Ultra";
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+th:hover{
+    background-color: brown;
+}
+td{
+    border: 5px dashed black;
+    background-color:antiquewhite;
+    padding: 10px;
+    font-family: "Oswald";
+}
+.box{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-direction:alternate-reverse;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    from{
+        top: 100px;
+        left: 0px;
+        border: 20px dotted red;
+    }
+    to{
+        top: 500px;
+        left:400px;
+        border: 20px dotted green;
+    }
+}
+.butterfly{
+    width: 110px;
+    height: 110px;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    margin-left: 550px;
+    position: absolute;
+    animation-name: catch;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+    animation-direction:alternate-reverse;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+@keyframes catch {
+    from{
+        top:100px;
+    }
+    to{
+        top: 500px;
+    }
+}
+.net{
+    width: 200px;
+    height: 200px;
+}
